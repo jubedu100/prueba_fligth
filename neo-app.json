@@ -18,6 +18,14 @@
         "entryPath": "/test-resources"
       },
       "description": "SAPUI5 Test Resources"
+    },
+    {
+      "path": "/sflight",
+      "target": {
+        "type": "destination",
+        "name": "sflight"
+      },
+      "description": "sflight"
     }
   ],
   "sendWelcomeFileRedirect": true
