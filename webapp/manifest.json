@@ -15,11 +15,11 @@
 		},
 		"dataSources": {
 			"z001_hello_world_srv_01": {
-				"uri": "/sflight/sap/opu/odata/sap/z001_hello_world_srv_01/",
+				"uri": "/fiori_01/sap/opu/odata/sap/z001_hello_world_srv_01/",
 				"type": "OData",
 				"settings": {
 					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
+					"localUri": "localService/z001_hello_world_srv_01/metadata.xml"
 				}
 			}
 		}

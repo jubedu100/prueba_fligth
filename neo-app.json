@@ -26,6 +26,14 @@
         "name": "sflight"
       },
       "description": "sflight"
+    },
+    {
+      "path": "/fiori_01",
+      "target": {
+        "type": "destination",
+        "name": "fiori_01"
+      },
+      "description": "fiori_01"
     }
   ],
   "sendWelcomeFileRedirect": true
