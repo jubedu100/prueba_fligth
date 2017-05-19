@@ -14,6 +14,11 @@ sap.ui.jsview("prueba_flightprueba_flight.view.View1", {
 	 */
 	createContent: function(oController) {
 		var oCombobox = new sap.m.ComboBox("selectID");
+		var itemTemplate = new sap.ui.core.Item({
+			text: "{vuelos>Carrid}",
+			key: "{vuelos>Carrid}"
+		});
+		oCombobox.bindItems("vuelos>/FLISet",itemTemplate);
 		
 		
 		var oTable = new sap.ui.table.Table("tableId", {
