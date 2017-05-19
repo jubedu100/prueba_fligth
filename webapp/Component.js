@@ -36,6 +36,7 @@ sap.ui.define([
 				this.getEventBus().publish("Component", "MetadataFailed");
 			}, this);
 			this.setModel(oModel, "vuelos");
+		
 		}
 	});
 });

@@ -13,23 +13,42 @@ sap.ui.jsview("prueba_flightprueba_flight.view.View1", {
 	 * @memberOf controller.View1
 	 */
 	createContent: function(oController) {
+		var oCombobox = new sap.m.ComboBox("selectID");
+		
+		
 		var oTable = new sap.ui.table.Table("tableId", {
-			visibleRowCount: 5,
+/*			columns:[
+				new sap.ui.table.Column({
+
+			label: "ID",
+			visible: true,
+			template: "vuelos>Carrid"
+				}),
+				
+				new sap.ui.table.Column({
+
+			label: "Name",
+			visible: true,
+			template: "vuelos>Connid"
+					
+				}),
+				new sap.ui.table.Column({
+
+			label: "Description",
+			visible: true,
+			template: "vuelos>Fldate"
+			
+		})
+				
+				
+				],*/
+			visibleRowCount: 350,	
+			visibleRowCountMode: sap.ui.table.VisibleRowCountMode.Interactive,
 			editable: true,
 			selectionBehavior: sap.ui.table.SelectionBehavior.Row,
 			SelectionMode: sap.ui.table.SelectionMode.Single
 		});
 		
-/*		var sEntity = "{vuelos>properties}";
-		
-		var properties = oTable.oMetadata._getEntityTypeByPath(sEntity);
-		var oMetaModel = new sap.ui.model.json.JSONModel();
-		oMetaModel.setData({
-			columns:properties
-		});*/
-		
-		
-
 		oTable.addColumn(new sap.ui.table.Column({
 
 			label: "ID",
@@ -37,11 +56,6 @@ sap.ui.jsview("prueba_flightprueba_flight.view.View1", {
 			template: "vuelos>Carrid"
 			
 		}));
-		
-	
-		
-		
-		
 
 		oTable.addColumn(new sap.ui.table.Column({
 
@@ -60,11 +74,14 @@ sap.ui.jsview("prueba_flightprueba_flight.view.View1", {
 		}));
 
 		oTable.bindRows("vuelos>/FLIGHTSet");
+		
+		/*var entries = oTable.getBinding("rows");*/
 
 
 		var oPage = new sap.m.Page({
 			title: "{i18n>title}",
 			content: [
+				oCombobox,
 				oTable
 			]
 		});
