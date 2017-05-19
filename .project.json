@@ -22,7 +22,7 @@
     {
       "templateId": "servicecatalog.connectivityComponent",
       "templateVersion": "0.0.0",
-      "dateTimeStamp": "Thu, 18 May 2017 11:03:46 GMT"
+      "dateTimeStamp": "Fri, 19 May 2017 08:21:11 GMT"
     }
   ],
   "codeCheckingTriggers": {
@@ -45,7 +45,7 @@
     }
   },
   "mockpreview": {
-    "mockUri": "/sflight/sap/opu/odata/sap/z001_hello_world_srv_01",
+    "mockUri": "/fiori_01/sap/opu/odata/sap/z001_hello_world_srv_01",
     "metadataFilePath": "",
     "loadJSONFiles": false,
     "loadCustomRequests": false,
